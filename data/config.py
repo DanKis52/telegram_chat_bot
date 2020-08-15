@@ -4,11 +4,19 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# Get Token
 BOT_TOKEN = str(os.getenv("BOT_TOKEN"))
+
+# Get Proxy Settings
+PROXY = str(os.getenv("PROXY"))
+LOGIN = str(os.getenv("LOGIN"))
+PASSWORD = str(os.getenv("PASSWORD"))
 
 admins = [
     528617712
 ]
+
+# Redis DB Settings
 
 # aiogram_redis = {
 #     'host': ip,
