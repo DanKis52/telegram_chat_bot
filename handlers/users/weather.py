@@ -17,7 +17,7 @@ async def print_weather(message: types.Message):
 
 @dp.message_handler(state=Weather.Q1)
 async def answer_q1(message: types.Message, state: FSMContext):
-    if message.text == "exit":
+    if message.text.lower() == "exit":
         await state.finish()
     else:
         city = message.text
