@@ -11,14 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6d85c2a-0fe1-4583-8f3a-5af9d1674aa8" name="Default Changelist" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/tg_aiogram_testing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tg_aiogram_testing.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handlers/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboards/default/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/default/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neural_network.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/notify_admins.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/notify_admins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/users/help.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/help.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/users/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/set_bot_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/set_bot_commands.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +46,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -115,30 +115,39 @@
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="734" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597421785361">
+    <state x="734" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597523380895">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="734" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.156.1360.728@0.0.1920.1040" timestamp="1597523380895" />
     <state x="734" y="321" key="#com.intellij.fileTypes.FileTypeChooser/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1597421785361" />
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597423969339">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1597423969339" />
-    <state width="1899" height="266" key="GridCell.Tab.0.bottom" timestamp="1597492734818">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1597527796281">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.156.1360.728@0.0.1920.1040" timestamp="1597527796281" />
     <state width="1899" height="266" key="GridCell.Tab.0.bottom/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1597492734818" />
-    <state width="1899" height="266" key="GridCell.Tab.0.center" timestamp="1597492734817">
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1597527796281">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.156.1360.728@0.0.1920.1040" timestamp="1597527796281" />
     <state width="1899" height="266" key="GridCell.Tab.0.center/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1597492734817" />
-    <state width="1899" height="266" key="GridCell.Tab.0.left" timestamp="1597492734817">
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1597527796281">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.156.1360.728@0.0.1920.1040" timestamp="1597527796281" />
     <state width="1899" height="266" key="GridCell.Tab.0.left/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1597492734817" />
-    <state width="1899" height="266" key="GridCell.Tab.0.right" timestamp="1597492734817">
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1597527796281">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.156.1360.728@0.0.1920.1040" timestamp="1597527796281" />
     <state width="1899" height="266" key="GridCell.Tab.0.right/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1597492734817" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1597523235918">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.156.1360.728@0.0.1920.1040" timestamp="1597523235918" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1597422088027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -12,8 +12,12 @@ PROXY = str(os.getenv("PROXY"))
 LOGIN = str(os.getenv("LOGIN"))
 PASSWORD = str(os.getenv("PASSWORD"))
 
+# Get Weather Token
+WEATHER_KEY = str(os.getenv("WEATHER_KEY"))
+
 admins = [
-    528617712
+    528617712,
+    425462959
 ]
 
 # Redis DB Settings

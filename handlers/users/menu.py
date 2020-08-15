@@ -12,4 +12,4 @@ async def show_menu(message: types.Message):
 
 @dp.message_handler(Text(equals=["Item 1","Item 2"]))
 async def get_item(message: types.Message):
-    await message.answer(f"Yor choose: {message.text}", reply_markup=ReplyKeyboardRemove())
+    await message.answer(f"Your сhoice: {message.text}", reply_markup=ReplyKeyboardRemove())

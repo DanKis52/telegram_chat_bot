@@ -3,6 +3,7 @@ from .start import dp
 from .testing import dp
 from .menu import dp
 from .purchase import dp
+from .weather import dp
 from .echo import dp
 
 
