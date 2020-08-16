@@ -6,8 +6,6 @@ from data import config
 from loader import dp
 from states.weather_states import Weather
 
-base_url = "http://api.openweathermap.org/data/2.5/weather?"
-
 
 @dp.message_handler(Command("weather"))
 async def print_weather(message: types.Message):
@@ -21,6 +19,7 @@ async def answer_q1(message: types.Message, state: FSMContext):
         await state.finish()
         await message.answer(text="Ты вышел в меню")
     else:
+        base_url = "http://api.openweathermap.org/data/2.5/weather?"
         city = message.text
         complete_url = base_url + "appid=" + config.WEATHER_KEY + "&q=" + city
         response = requests.get(complete_url)

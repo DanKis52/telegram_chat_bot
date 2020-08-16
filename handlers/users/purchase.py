@@ -1,9 +1,7 @@
 import logging
-
 from aiogram import types
 from aiogram.dispatcher.filters import Command
 from aiogram.types import CallbackQuery
-
 from keyboards.inline.buy_inline import choice, beer_keyboard
 from keyboards.inline.callback_datas import buy_callback
 from loader import dp

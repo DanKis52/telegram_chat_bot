@@ -1,9 +1,7 @@
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters import Command
-
 from loader import dp
 from aiogram import types
-
 from states import Test
 
 

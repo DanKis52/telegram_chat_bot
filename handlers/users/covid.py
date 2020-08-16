@@ -1,9 +1,10 @@
 from aiogram import types
 from aiogram.dispatcher.filters import Command
-
 from loader import dp
+from utils.misc import rate_limit
 
 
+@rate_limit(5, 'covid')
 @dp.message_handler(Command("covid"))
 async def covid_stats(message: types.Message):
     from covid.api import CovId19Data
