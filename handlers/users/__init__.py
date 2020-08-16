@@ -4,6 +4,7 @@ from .testing import dp
 from .menu import dp
 from .purchase import dp
 from .weather import dp
+from .covid import dp
 from .echo import dp
 
 

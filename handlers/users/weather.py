@@ -11,14 +11,15 @@ base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
 @dp.message_handler(Command("weather"))
 async def print_weather(message: types.Message):
-    await message.answer(text="Input your city, for exit print <b>exit</b>")
+    await message.answer(text="Введи город, для выхода напиши /exit")
     await Weather.first()
 
 
 @dp.message_handler(state=Weather.Q1)
 async def answer_q1(message: types.Message, state: FSMContext):
-    if message.text.lower() == "exit":
+    if message.text.lower() == "/exit":
         await state.finish()
+        await message.answer(text="Ты вышел в меню")
     else:
         city = message.text
         complete_url = base_url + "appid=" + config.WEATHER_KEY + "&q=" + city
@@ -30,9 +31,10 @@ async def answer_q1(message: types.Message, state: FSMContext):
             feels_like = int(weather_main['feels_like'] - 273)
             humidity = weather_main['humidity']
             pressure = int(weather_main['pressure'] * 0.75006375541921)
-            await message.answer(text=f"Weather in {city}:\n"
-                                      f"Temperature is {temp} C, feels like {feels_like} C\n"
-                                      f"Humidity (влажность) is {humidity} %\n"
-                                      f"Pressure is {pressure} mmHg")
+            await message.answer(text=f"Погода в городе {city}:\n"
+                                      f"Температура {temp} &#176C, ощущается как {feels_like} &#176C\n"
+                                      f"Влажность {humidity} %\n"
+                                      f"Давление {pressure} мм рт. ст.\n\n"
+                                      f"Можешь ввести другой город или написать /exit для выхода")
         else:
-            await message.answer(text="City not found, try again or print <b>exit</b>")
+            await message.answer(text="Город не найден, попробуй снова или напиши /exit для выхода")

@@ -16,8 +16,7 @@ PASSWORD = str(os.getenv("PASSWORD"))
 WEATHER_KEY = str(os.getenv("WEATHER_KEY"))
 
 admins = [
-    528617712,
-    425462959
+    528617712
 ]
 
 # Redis DB Settings

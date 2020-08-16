@@ -5,4 +5,4 @@ python-dotenv
 aiohttp_socks
 numpy
 requests
-json
+covid-data-api
