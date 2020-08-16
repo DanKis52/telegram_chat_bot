@@ -25,11 +25,15 @@ async def answer_q1(message: types.Message, state: FSMContext):
         response = requests.get(complete_url)
         full_weather_dict = response.json()
         if full_weather_dict['cod'] != "404":
+            coord = full_weather_dict['coord']
+            lon = coord['lon']
+            lat = coord['lat']
             weather_main = full_weather_dict['main']
             temp = int(weather_main['temp'] - 273)
             feels_like = int(weather_main['feels_like'] - 273)
             humidity = weather_main['humidity']
             pressure = int(weather_main['pressure'] * 0.75006375541921)
+            await message.answer_location(latitude=lat, longitude=lon)
             await message.answer(text=f"Погода в городе {city}:\n"
                                       f"Температура {temp} &#176C, ощущается как {feels_like} &#176C\n"
                                       f"Влажность {humidity} %\n"
