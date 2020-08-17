@@ -6,6 +6,7 @@ from .purchase import dp
 from .weather import dp
 from .covid import dp
 from .meme import dp
+from .joke import dp
 from .echo import dp
 
 
