@@ -29,8 +29,10 @@ async def covid_stats(message: types.Message):
     deaths = current_info['deaths']
     deaths_delta = current_info['deaths'] - before_info['deaths']
 
+    date = current_day.split()[0]
+
     await message.answer(text=f"Статистика по коронавирусу в России:\n"
-                              f"<i>Информация актуальна на {current_day}</i>\n"
+                              f"<i>Информация актуальна на {date}</i>\n"
                               f"Заболеваний: <b>{confirmed}</b> ( <b>+{confirmed_delta}</b> за сутки )\n"
                               f"Выздоровлений: <b>{recovered}</b> ( <b>+{recovered_delta}</b> за сутки )\n"
                               f"Смертей: <b>{deaths}</b> ( <b>+{deaths_delta}</b> за сутки )")

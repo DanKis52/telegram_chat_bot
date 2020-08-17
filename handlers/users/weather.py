@@ -15,7 +15,7 @@ async def print_weather(message: types.Message):
 
 @dp.message_handler(state=Weather.Q1)
 async def answer_q1(message: types.Message, state: FSMContext):
-    if message.text.lower() == "/exit":
+    if message.text.lower() == "/exit" or message.text.lower() == "/exit@don_mafioznik_bot":
         await state.finish()
         await message.answer(text="Ты вышел в меню")
     else:
