@@ -31,6 +31,6 @@ async def covid_stats(message: types.Message):
 
     await message.answer(text=f"Статистика по коронавирусу в России:\n"
                               f"<i>Информация актуальна на {current_day}</i>\n"
-                              f"Заболеваний: <b>{confirmed}</b> ( <b>+{confirmed_delta}</b> за день )\n"
-                              f"Выздоровлений: <b>{recovered}</b> ( <b>+{recovered_delta}</b> за день )\n"
-                              f"Смертей: <b>{deaths}</b> ( <b>+{deaths_delta}</b> за день )")
+                              f"Заболеваний: <b>{confirmed}</b> ( <b>+{confirmed_delta}</b> за сутки )\n"
+                              f"Выздоровлений: <b>{recovered}</b> ( <b>+{recovered_delta}</b> за сутки )\n"
+                              f"Смертей: <b>{deaths}</b> ( <b>+{deaths_delta}</b> за сутки )")
