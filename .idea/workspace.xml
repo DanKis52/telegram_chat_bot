@@ -16,11 +16,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6d85c2a-0fe1-4583-8f3a-5af9d1674aa8" name="Default Changelist" comment="New echo and weather for groups">
+    <list default="true" id="a6d85c2a-0fe1-4583-8f3a-5af9d1674aa8" name="Default Changelist" comment="/joke - unfunny jokes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handlers/users/help.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/help.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/set_bot_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/set_bot_commands.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597657013987</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="/joke - unfunny jokes">
+      <created>1597663731295</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1597663731295</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -199,7 +204,8 @@
     <MESSAGE value="Antiflood" />
     <MESSAGE value="Added /meme and there's nothing to explain" />
     <MESSAGE value="New echo and weather for groups" />
-    <option name="LAST_COMMIT_MESSAGE" value="New echo and weather for groups" />
+    <MESSAGE value="/joke - unfunny jokes" />
+    <option name="LAST_COMMIT_MESSAGE" value="/joke - unfunny jokes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597644998280">
@@ -217,39 +223,39 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597644738156" />
-    <state width="1197" height="282" key="GridCell.Tab.0.bottom" timestamp="1597663498016">
+    <state width="1197" height="282" key="GridCell.Tab.0.bottom" timestamp="1597664220501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.156.1360.728@0.0.1920.1040" timestamp="1597531609618" />
-    <state width="1197" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597663498016" />
+    <state width="1197" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597664220501" />
     <state width="1899" height="266" key="GridCell.Tab.0.bottom/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1597588270702" />
-    <state width="1197" height="282" key="GridCell.Tab.0.center" timestamp="1597663498016">
+    <state width="1197" height="282" key="GridCell.Tab.0.center" timestamp="1597664220500">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.156.1360.728@0.0.1920.1040" timestamp="1597531609618" />
-    <state width="1197" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597663498016" />
+    <state width="1197" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597664220500" />
     <state width="1899" height="266" key="GridCell.Tab.0.center/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1597588270702" />
-    <state width="1197" height="282" key="GridCell.Tab.0.left" timestamp="1597663498016">
+    <state width="1197" height="282" key="GridCell.Tab.0.left" timestamp="1597664220500">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.156.1360.728@0.0.1920.1040" timestamp="1597531609617" />
-    <state width="1197" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597663498016" />
+    <state width="1197" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597664220500" />
     <state width="1899" height="266" key="GridCell.Tab.0.left/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1597588270702" />
-    <state width="1197" height="282" key="GridCell.Tab.0.right" timestamp="1597663498016">
+    <state width="1197" height="282" key="GridCell.Tab.0.right" timestamp="1597664220500">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.156.1360.728@0.0.1920.1040" timestamp="1597531609618" />
-    <state width="1197" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597663498016" />
+    <state width="1197" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597664220500" />
     <state width="1899" height="266" key="GridCell.Tab.0.right/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1597588270702" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1597523235918">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.156.1360.728@0.0.1920.1040" timestamp="1597523235918" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1597657019503">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1597663736826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.156.1360.728@0.0.1920.1040" timestamp="1597531708457" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597657019503" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597663736826" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1597586230905" />
   </component>
 </project>
