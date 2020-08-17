@@ -7,6 +7,6 @@ from loader import dp
 
 @dp.message_handler(Command('meme'))
 async def send_cat(message: types.Message):
-    response = requests.get('https://meme-api.herokuapp.com/gimme').json()
+    response = requests.get('https://meme-api.herokuapp.com/gimme/memes').json()
     url = response['url']
     await message.answer_photo(photo=url)

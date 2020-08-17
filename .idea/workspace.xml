@@ -16,15 +16,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6d85c2a-0fe1-4583-8f3a-5af9d1674aa8" name="Default Changelist" comment="Antiflood">
-      <change beforePath="$PROJECT_DIR$/.idea/tg_aiogram_testing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tg_aiogram_testing.iml" afterDir="false" />
+    <list default="true" id="a6d85c2a-0fe1-4583-8f3a-5af9d1674aa8" name="Default Changelist" comment="Added /meme and there's nothing to explain">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/covid.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/covid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/echo.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/echo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/help.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/help.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/set_bot_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/set_bot_commands.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/users/meme.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/meme.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597586227289</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added /meme and there's nothing to explain">
+      <created>1597652913174</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1597652913174</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -180,7 +181,8 @@
     <MESSAGE value="localised and covid stats added" />
     <MESSAGE value="Code-Style fix" />
     <MESSAGE value="Antiflood" />
-    <option name="LAST_COMMIT_MESSAGE" value="Antiflood" />
+    <MESSAGE value="Added /meme and there's nothing to explain" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added /meme and there's nothing to explain" />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597644998280">
@@ -225,10 +227,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.156.1360.728@0.0.1920.1040" timestamp="1597523235918" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1597586230905">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1597652922382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.156.1360.728@0.0.1920.1040" timestamp="1597531708457" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597652922382" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1597586230905" />
   </component>
 </project>
