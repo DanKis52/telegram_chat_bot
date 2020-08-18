@@ -8,6 +8,7 @@ from .covid import dp
 from .meme import dp
 from .joke import dp
 from .news import dp
+from .city import dp
 from .echo import dp
 
 
