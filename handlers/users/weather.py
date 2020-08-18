@@ -4,7 +4,7 @@ from aiogram.dispatcher.filters import Command
 import requests
 from data import config
 from loader import dp
-from states.weather_states import Weather
+from states import Weather
 
 
 @dp.message_handler(Command("weather"))

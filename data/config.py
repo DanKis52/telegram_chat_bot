@@ -14,6 +14,9 @@ PASSWORD = str(os.getenv("PASSWORD"))
 # Get Weather Token
 WEATHER_KEY = str(os.getenv("WEATHER_KEY"))
 
+# Get Microsoft Token
+MS_KEY = str(os.getenv("MS_KEY"))
+
 admins = [
     528617712
 ]
