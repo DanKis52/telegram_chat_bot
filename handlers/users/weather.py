@@ -1,3 +1,5 @@
+import logging
+
 from aiogram import types
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters import Command
@@ -9,6 +11,8 @@ from states import Weather
 
 @dp.message_handler(Command("weather"))
 async def print_weather(message: types.Message):
+    logging.info(
+        f"{message.from_user.first_name, message.from_user.username, message.from_user.id} ввел {message.text}")
     await message.answer(text="Введи город, для выхода напиши /exit")
     await Weather.first()
 
@@ -16,9 +20,13 @@ async def print_weather(message: types.Message):
 @dp.message_handler(state=Weather.Q1)
 async def answer_q1(message: types.Message, state: FSMContext):
     if message.text.lower() == "/exit" or message.text.lower() == "/exit@don_mafioznik_bot":
+        logging.info(
+            f"{message.from_user.first_name, message.from_user.username, message.from_user.id} вышел в меню")
         await state.finish()
         await message.answer(text="Ты вышел в меню")
     else:
+        logging.info(
+            f"{message.from_user.first_name, message.from_user.username, message.from_user.id} выбрал город {message.text}")
         base_url = "http://api.openweathermap.org/data/2.5/weather?"
         city = message.text
         complete_url = base_url + "appid=" + config.WEATHER_KEY + "&q=" + city

@@ -1,3 +1,5 @@
+import logging
+
 from aiogram import types
 from aiogram.dispatcher.filters import Command
 from loader import dp
@@ -7,6 +9,7 @@ from utils.misc import rate_limit
 @rate_limit(5, 'covid')
 @dp.message_handler(Command("covid"))
 async def covid_stats(message: types.Message):
+    logging.info(f"{message.from_user.first_name, message.from_user.username, message.from_user.id} ввел {message.text}")
     from covid.api import CovId19Data
     api = CovId19Data(force=False)
     res = api.get_history_by_country("russia")
