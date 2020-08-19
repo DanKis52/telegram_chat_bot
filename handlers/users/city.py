@@ -35,6 +35,7 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
             cities.remove(message.text.title())
             last_letter = message.text.upper()[-1]
             last_letter_2 = message.text.upper()[-2]
+            last_letter_3 = message.text.upper()[-3]
             rand_answer = []
             for city in cities:
                 if city.startswith(last_letter):
@@ -42,6 +43,10 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
             if len(rand_answer) == 0:
                 for city in cities:
                     if city.startswith(last_letter_2):
+                        rand_answer.append(city)
+            if len(rand_answer) == 0:
+                for city in cities:
+                    if city.startswith(last_letter_3):
                         rand_answer.append(city)
             answer_city = rand_answer[random.randint(0, len(rand_answer))]
             cities.remove(answer_city)
@@ -52,6 +57,8 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
             if answer_last_letter == 'ь' or answer_last_letter == 'ъ' or answer_last_letter == 'ы' or answer_last_letter == 'й':
                 answer_last_letter = answer_city[-3]
             await state.update_data(upd_cities=cities, answer_last_letter=answer_last_letter)
+            logging.info(
+                f"{message.from_user.first_name, message.from_user.username, message.from_user.id} ввел город {message.text}, ответ бота {answer_city}")
             await City.next()
         else:
             await message.answer(text="Я не знаю такого города или он уже был введен, введи другой")
@@ -73,6 +80,7 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 cities.remove(message.text.title())
                 last_letter = message.text.upper()[-1]
                 last_letter_2 = message.text.upper()[-2]
+                last_letter_3 = message.text.upper()[-3]
                 rand_answer = []
                 for city in cities:
                     if city.startswith(last_letter):
@@ -80,6 +88,10 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 if len(rand_answer) == 0:
                     for city in cities:
                         if city.startswith(last_letter_2):
+                            rand_answer.append(city)
+                if len(rand_answer) == 0:
+                    for city in cities:
+                        if city.startswith(last_letter_3):
                             rand_answer.append(city)
                 answer_city = rand_answer[random.randint(0, len(rand_answer))]
                 cities.remove(answer_city)
@@ -116,12 +128,18 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 last_letter = message.text.upper()[-1]
                 last_letter_2 = message.text.upper()[-2]
                 rand_answer = []
+                last_letter_3 = message.text.upper()[-3]
+                rand_answer = []
                 for city in cities:
                     if city.startswith(last_letter):
                         rand_answer.append(city)
                 if len(rand_answer) == 0:
                     for city in cities:
                         if city.startswith(last_letter_2):
+                            rand_answer.append(city)
+                if len(rand_answer) == 0:
+                    for city in cities:
+                        if city.startswith(last_letter_3):
                             rand_answer.append(city)
                 answer_city = rand_answer[random.randint(0, len(rand_answer))]
                 cities.remove(answer_city)
@@ -157,6 +175,7 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 cities.remove(message.text.title())
                 last_letter = message.text.upper()[-1]
                 last_letter_2 = message.text.upper()[-2]
+                last_letter_3 = message.text.upper()[-3]
                 rand_answer = []
                 for city in cities:
                     if city.startswith(last_letter):
@@ -164,6 +183,10 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 if len(rand_answer) == 0:
                     for city in cities:
                         if city.startswith(last_letter_2):
+                            rand_answer.append(city)
+                if len(rand_answer) == 0:
+                    for city in cities:
+                        if city.startswith(last_letter_3):
                             rand_answer.append(city)
                 answer_city = rand_answer[random.randint(0, len(rand_answer))]
                 cities.remove(answer_city)
@@ -199,6 +222,7 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 cities.remove(message.text.title())
                 last_letter = message.text.upper()[-1]
                 last_letter_2 = message.text.upper()[-2]
+                last_letter_3 = message.text.upper()[-3]
                 rand_answer = []
                 for city in cities:
                     if city.startswith(last_letter):
@@ -206,6 +230,10 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 if len(rand_answer) == 0:
                     for city in cities:
                         if city.startswith(last_letter_2):
+                            rand_answer.append(city)
+                if len(rand_answer) == 0:
+                    for city in cities:
+                        if city.startswith(last_letter_3):
                             rand_answer.append(city)
                 answer_city = rand_answer[random.randint(0, len(rand_answer))]
                 cities.remove(answer_city)
@@ -241,6 +269,7 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 cities.remove(message.text.title())
                 last_letter = message.text.upper()[-1]
                 last_letter_2 = message.text.upper()[-2]
+                last_letter_3 = message.text.upper()[-3]
                 rand_answer = []
                 for city in cities:
                     if city.startswith(last_letter):
@@ -248,6 +277,10 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 if len(rand_answer) == 0:
                     for city in cities:
                         if city.startswith(last_letter_2):
+                            rand_answer.append(city)
+                if len(rand_answer) == 0:
+                    for city in cities:
+                        if city.startswith(last_letter_3):
                             rand_answer.append(city)
                 answer_city = rand_answer[random.randint(0, len(rand_answer))]
                 cities.remove(answer_city)
@@ -283,6 +316,7 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 cities.remove(message.text.title())
                 last_letter = message.text.upper()[-1]
                 last_letter_2 = message.text.upper()[-2]
+                last_letter_3 = message.text.upper()[-3]
                 rand_answer = []
                 for city in cities:
                     if city.startswith(last_letter):
@@ -290,6 +324,10 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 if len(rand_answer) == 0:
                     for city in cities:
                         if city.startswith(last_letter_2):
+                            rand_answer.append(city)
+                if len(rand_answer) == 0:
+                    for city in cities:
+                        if city.startswith(last_letter_3):
                             rand_answer.append(city)
                 answer_city = rand_answer[random.randint(0, len(rand_answer))]
                 cities.remove(answer_city)
@@ -325,6 +363,7 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 cities.remove(message.text.title())
                 last_letter = message.text.upper()[-1]
                 last_letter_2 = message.text.upper()[-2]
+                last_letter_3 = message.text.upper()[-3]
                 rand_answer = []
                 for city in cities:
                     if city.startswith(last_letter):
@@ -332,6 +371,10 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 if len(rand_answer) == 0:
                     for city in cities:
                         if city.startswith(last_letter_2):
+                            rand_answer.append(city)
+                if len(rand_answer) == 0:
+                    for city in cities:
+                        if city.startswith(last_letter_3):
                             rand_answer.append(city)
                 answer_city = rand_answer[random.randint(0, len(rand_answer))]
                 cities.remove(answer_city)
@@ -367,6 +410,7 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 cities.remove(message.text.title())
                 last_letter = message.text.upper()[-1]
                 last_letter_2 = message.text.upper()[-2]
+                last_letter_3 = message.text.upper()[-3]
                 rand_answer = []
                 for city in cities:
                     if city.startswith(last_letter):
@@ -374,6 +418,10 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 if len(rand_answer) == 0:
                     for city in cities:
                         if city.startswith(last_letter_2):
+                            rand_answer.append(city)
+                if len(rand_answer) == 0:
+                    for city in cities:
+                        if city.startswith(last_letter_3):
                             rand_answer.append(city)
                 answer_city = rand_answer[random.randint(0, len(rand_answer))]
                 cities.remove(answer_city)
@@ -409,6 +457,7 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 cities.remove(message.text.title())
                 last_letter = message.text.upper()[-1]
                 last_letter_2 = message.text.upper()[-2]
+                last_letter_3 = message.text.upper()[-3]
                 rand_answer = []
                 for city in cities:
                     if city.startswith(last_letter):
@@ -416,6 +465,10 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 if len(rand_answer) == 0:
                     for city in cities:
                         if city.startswith(last_letter_2):
+                            rand_answer.append(city)
+                if len(rand_answer) == 0:
+                    for city in cities:
+                        if city.startswith(last_letter_3):
                             rand_answer.append(city)
                 answer_city = rand_answer[random.randint(0, len(rand_answer))]
                 cities.remove(answer_city)
@@ -452,6 +505,7 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 cities.remove(message.text.title())
                 last_letter = message.text.upper()[-1]
                 last_letter_2 = message.text.upper()[-2]
+                last_letter_3 = message.text.upper()[-3]
                 rand_answer = []
                 for city in cities:
                     if city.startswith(last_letter):
@@ -459,6 +513,10 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 if len(rand_answer) == 0:
                     for city in cities:
                         if city.startswith(last_letter_2):
+                            rand_answer.append(city)
+                if len(rand_answer) == 0:
+                    for city in cities:
+                        if city.startswith(last_letter_3):
                             rand_answer.append(city)
                 answer_city = rand_answer[random.randint(0, len(rand_answer))]
                 cities.remove(answer_city)
@@ -495,6 +553,7 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 cities.remove(message.text.title())
                 last_letter = message.text.upper()[-1]
                 last_letter_2 = message.text.upper()[-2]
+                last_letter_3 = message.text.upper()[-3]
                 rand_answer = []
                 for city in cities:
                     if city.startswith(last_letter):
@@ -502,6 +561,10 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 if len(rand_answer) == 0:
                     for city in cities:
                         if city.startswith(last_letter_2):
+                            rand_answer.append(city)
+                if len(rand_answer) == 0:
+                    for city in cities:
+                        if city.startswith(last_letter_3):
                             rand_answer.append(city)
                 answer_city = rand_answer[random.randint(0, len(rand_answer))]
                 cities.remove(answer_city)
@@ -538,6 +601,7 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 cities.remove(message.text.title())
                 last_letter = message.text.upper()[-1]
                 last_letter_2 = message.text.upper()[-2]
+                last_letter_3 = message.text.upper()[-3]
                 rand_answer = []
                 for city in cities:
                     if city.startswith(last_letter):
@@ -545,6 +609,10 @@ async def bot_answer_city(message: types.Message, state: FSMContext):
                 if len(rand_answer) == 0:
                     for city in cities:
                         if city.startswith(last_letter_2):
+                            rand_answer.append(city)
+                if len(rand_answer) == 0:
+                    for city in cities:
+                        if city.startswith(last_letter_3):
                             rand_answer.append(city)
                 answer_city = rand_answer[random.randint(0, len(rand_answer))]
                 cities.remove(answer_city)
