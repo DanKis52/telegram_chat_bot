@@ -11,6 +11,7 @@ from utils.misc import rate_limit
 async def bot_help(message: types.Message):
     logging.info(f"{message.from_user.first_name, message.from_user.username, message.from_user.id} ввел {message.text}")
     await message.answer(text=f"Список доступных тебе команд:\n"
+                              f"/instasave - скачать фото из Instagram по ссылке\n"
                               f"/city - игра в города России\n"
                               f"/meme - получить пендосский мем\n"
                               f"/joke - несмешные шутки\n"
