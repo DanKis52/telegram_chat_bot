@@ -5,16 +5,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6d85c2a-0fe1-4583-8f3a-5af9d1674aa8" name="Default Changelist" comment="Added /instasave for downloading instagram photos">
+    <list default="true" id="a6d85c2a-0fe1-4583-8f3a-5af9d1674aa8" name="Default Changelist" comment="added /city game">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/help.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/help.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/instasave.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/weather.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/weather.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/states/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/states/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/states/insta.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/set_bot_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/set_bot_commands.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cities_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/cities_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/users/city.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/city.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/users/meme.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/meme.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/loader.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,14 +38,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\kisel\telegram_chat_bot\handlers\users" />
-      <recent name="C:\Users\kisel\telegram_chat_bot" />
-    </key>
   </component>
   <component name="RunManager" selected="Python.app">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -59,7 +48,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\kisel\AppData\Local\Programs\Python\Python38-32\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\LT\AppData\Local\Programs\Python\Python38-32\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -94,75 +83,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="instasave" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="telegram_chat_bot" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/handlers/users" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/handlers/users/instasave.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="steam" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="telegram_chat_bot" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/handlers/users" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/handlers/users/steam.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="words_list" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="telegram_chat_bot" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/words_list.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="Python.app" />
+      <item itemvalue="Python.cities_list" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.app" />
-        <item itemvalue="Python.instasave" />
-        <item itemvalue="Python.steam" />
-        <item itemvalue="Python.words_list" />
         <item itemvalue="Python.cities_list" />
       </list>
     </recent_temporary>
@@ -281,21 +208,7 @@
       <option name="project" value="LOCAL" />
       <updated>1597777160580</updated>
     </task>
-    <task id="LOCAL-00016" summary="fix">
-      <created>1597777967854</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1597777967854</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Added /instasave for downloading instagram photos">
-      <created>1605382106930</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1605382106930</updated>
-    </task>
-    <option name="localTasksCounter" value="18" />
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -345,25 +258,28 @@
     <MESSAGE value="Added /meme and there's nothing to explain" />
     <MESSAGE value="New echo and weather for groups" />
     <MESSAGE value="/joke - unfunny jokes" />
+    <MESSAGE value="fix" />
     <MESSAGE value="added /news" />
     <MESSAGE value="logging added" />
     <MESSAGE value="added /city game" />
-    <MESSAGE value="fix" />
-    <MESSAGE value="Added /instasave for downloading instagram photos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added /instasave for downloading instagram photos" />
+    <option name="LAST_COMMIT_MESSAGE" value="added /city game" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597817735037">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597817735037" />
     <state x="734" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597644998280">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="734" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.156.1360.728@0.0.1920.1040" timestamp="1597523380895" />
     <state x="734" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597644998280" />
     <state x="734" y="321" key="#com.intellij.fileTypes.FileTypeChooser/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1597421785361" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605358462314">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597656650949">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597656650949" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1605358462314" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1597423969339" />
     <state x="798" y="410" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog" timestamp="1597772921950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -372,47 +288,40 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597734816326" />
-    <state width="1899" height="489" key="GridCell.Tab.0.bottom" timestamp="1605529674904">
+    <state width="1195" height="439" key="GridCell.Tab.0.bottom" timestamp="1597826330552">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.156.1360.728@0.0.1920.1040" timestamp="1597531609618" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597762390463" />
-    <state width="1899" height="489" key="GridCell.Tab.0.bottom/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1605529674904" />
-    <state width="1110" height="137" key="GridCell.Tab.0.bottom/1920.-191.1680.1010/0.0.1920.1040@1920.-191.1680.1010" timestamp="1597782454373" />
-    <state width="1899" height="489" key="GridCell.Tab.0.center" timestamp="1605529674904">
+    <state width="1195" height="439" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597826330552" />
+    <state width="1899" height="266" key="GridCell.Tab.0.bottom/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1597777896058" />
+    <state width="1195" height="439" key="GridCell.Tab.0.center" timestamp="1597826330551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.156.1360.728@0.0.1920.1040" timestamp="1597531609618" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597762390463" />
-    <state width="1899" height="489" key="GridCell.Tab.0.center/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1605529674904" />
-    <state width="1110" height="137" key="GridCell.Tab.0.center/1920.-191.1680.1010/0.0.1920.1040@1920.-191.1680.1010" timestamp="1597782454373" />
-    <state width="1899" height="489" key="GridCell.Tab.0.left" timestamp="1605529674903">
+    <state width="1195" height="439" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597826330551" />
+    <state width="1899" height="266" key="GridCell.Tab.0.center/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1597777896058" />
+    <state width="1195" height="439" key="GridCell.Tab.0.left" timestamp="1597826330551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.156.1360.728@0.0.1920.1040" timestamp="1597531609617" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597762390463" />
-    <state width="1899" height="489" key="GridCell.Tab.0.left/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1605529674903" />
-    <state width="1110" height="137" key="GridCell.Tab.0.left/1920.-191.1680.1010/0.0.1920.1040@1920.-191.1680.1010" timestamp="1597782454373" />
-    <state width="1899" height="489" key="GridCell.Tab.0.right" timestamp="1605529674904">
+    <state width="1195" height="439" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597826330551" />
+    <state width="1899" height="266" key="GridCell.Tab.0.left/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1597777896058" />
+    <state width="1195" height="439" key="GridCell.Tab.0.right" timestamp="1597826330551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.156.1360.728@0.0.1920.1040" timestamp="1597531609618" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597762390463" />
-    <state width="1899" height="489" key="GridCell.Tab.0.right/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1605529674904" />
-    <state width="1110" height="137" key="GridCell.Tab.0.right/1920.-191.1680.1010/0.0.1920.1040@1920.-191.1680.1010" timestamp="1597782454373" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1597523235918">
+    <state width="1195" height="439" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597826330551" />
+    <state width="1899" height="266" key="GridCell.Tab.0.right/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1597777896058" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1597817697263">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.156.1360.728@0.0.1920.1040" timestamp="1597523235918" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1597777971563">
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597817697263" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1597777164877">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.156.1360.728@0.0.1920.1040" timestamp="1597531708457" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597758543361" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1597777971563" />
-    <state x="666" y="119" width="587" height="801" key="find.popup" timestamp="1605358496691">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="666" y="119" width="587" height="801" key="find.popup/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1605358496691" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.-191.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1597777164877" />
   </component>
 </project>

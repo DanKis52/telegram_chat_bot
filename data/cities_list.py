@@ -6,4 +6,5 @@ def get_city_list():
     city_list = []
     for city in cities:
         city_list.append(city['city'])
+    city_list.remove('Йошкар-Ола')
     return city_list

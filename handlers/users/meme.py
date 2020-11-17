@@ -11,6 +11,6 @@ from loader import dp
 async def send_cat(message: types.Message):
     logging.info(
         f"{message.from_user.first_name, message.from_user.username, message.from_user.id} ввел {message.text}")
-    response = requests.get('https://meme-api.herokuapp.com/gimme/memes').json()
+    response = requests.get('https://meme-api.herokuapp.com/gimme/dankmemes').json()
     url = response['url']
     await message.answer_photo(photo=url)
