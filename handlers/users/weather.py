@@ -45,7 +45,7 @@ async def answer_q1(message: types.Message, state: FSMContext):
             await message.answer(text=f"Погода в городе {city}:\n"
                                       f"Температура {temp} &#176C, ощущается как {feels_like} &#176C\n"
                                       f"Влажность {humidity} %\n"
-                                      f"Давление {pressure} мм рт. ст.\n\n"
-                                      f"Можешь ввести другой город или написать /exit для выхода")
+                                      f"Давление {pressure} мм рт. ст.\n\n")
+            await state.finish()
         else:
             await message.answer(text="Город не найден, попробуй снова или напиши /exit для выхода")

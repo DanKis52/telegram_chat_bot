@@ -21,6 +21,9 @@ admins = [
     528617712
 ]
 
+I_LOGIN = str(os.getenv("I_LOGIN"))
+I_PW = str(os.getenv("I_PW"))
+
 # Redis DB Settings
 
 # aiogram_redis = {

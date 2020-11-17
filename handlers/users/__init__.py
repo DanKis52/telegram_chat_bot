@@ -9,6 +9,7 @@ from .meme import dp
 from .joke import dp
 from .news import dp
 from .city import dp
+from .steam import dp
 from .instasave import dp
 from .echo import dp
 
